@@ -26,13 +26,13 @@ public class StudentManagementController {
         System.out.println(student);
     }
 
-    @DeleteMapping(path = "{studentId")
+    @DeleteMapping(path = "{studentId}")
     public void deleteStudent(@PathVariable("studentId") Integer studentId) {
         System.out.println("deleteStudent");
         System.out.println(studentId);
     }
 
-    @PutMapping(path = "{studentId")
+    @PutMapping(path = "{studentId}")
     public void updateStudent(@PathVariable Integer studentId, @RequestBody Student student) {
         System.out.println("updateStudent");
         System.out.println(String.format("%s %s", student, studentId));
